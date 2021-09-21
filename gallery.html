@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFÉ MÉMÉNTOS</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    
+  </head>
+  <body>
+    
+      <section class="hero">
+        <header class="header">
+          <a href="search.html">
+            <img src="images/icons8-search.svg" alt="search bar" class="search-bar"
+          /></a>
+          <a href="search.html">
+            <img src="images/icons8-search - white.svg" alt="search bar" class="search-bar-white"
+          /></a> 
+
+          
+            <div class="site-brand-name">
+              <h1>IFÉ MÉMÉNTOS</h1>
+              <hr>
+            </div>
+          
+          <div class="hamburger" id="showmobile">
+            <span class="burger-1"></span>
+            <span class="burger-2"></span>
+            <span class="burger-3"></span>
+          </div>
+          <nav class="nav-bar">
+            <div class="navigation nav-black" id="nav">
+              <div class="navigation nav-red">
+                <div class="navigation nav-white" id=>
+                  <div class="site-brand-name">
+                    <h1>IFÉ MÉMÉNTOS</h1>
+                    <hr>
+                  </div>
+                  
+                    <ul class="nav-links">
+                      <div class="close-navigation">
+          
+                      
+                         <img src="images/icon-close.svg" alt="close menu" class="hamburger-close"id="exitnav">
+                      </div>
+          
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ARTISTS</a></li>
+                      <li><a href="gallery.html">GALLERY</a></li>
+                      <li><a href="exhibition.html">EXHIBITIONS</a></li>
+                      <li><a href="index.html"><h1 class="desktop-site- brand-name">IFÉ MÉMÉNTOS</h1><hr></a></li>
+                      <li><a href="/print.html">PRINTS</a></li>
+                      <li><a href="press.html">PRESS</a></li>
+                      <li><a href="subscribe.html">SUBSCRIBE</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                     
+                    </ul>
+                  
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+        </header>
+        <main>
+        
+                <div id="myBtnContainer" class="filter-btn-container">
+                        <button class="btn active" onclick="filterSelection('all')"> ALL ARTWORK </button>
+                        <button class="btn" onclick="filterSelection('nature')"> OIL PAINTING</button>
+                        <button class="btn" onclick="filterSelection('cars')"> PHOTOGRAPHY</button>
+                        <button class="btn" onclick="filterSelection('people')"> CHARCOAL</button>
+                        
+                      </div>
+
+                      
+                      <!-- Portfolio Gallery Grid -->
+                      <div class="row">
+                        <div class="column nature">
+                          <div class="content">
+
+                                <img src="images/color me/color me you.jpeg" alt="'color me you' color me collection" class="imgs" id="myImg">
+                                <!-- Trigger the Modal -->
+                                <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+                             <h3 class="gallery-info-text">'color me you' color me collection, <span class="medium">oil painting </span>
+                                        AND image <span class="medium">ON PAPER,</span>
+                                         42.5” X 35”, 2021</h3>
+                          </div>
+                        </div>
+                        <div class="column nature">
+                          <div class="content">
+                                <img src="images/Diary of eros/mindless.jpg" alt="'mindless' the diary of eros collection, "  class="imgs" id="myImg2"/>
+                                <!-- The Modal -->
+<div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+                                <h3 class="gallery-info-text">'mindless' the diary of eros collection, <span class="medium">oil painting</span>
+                                        AND <span class="medium">image ON PAPER,</span>
+                                        42.5” X 35”, 2020</h3>
+                          </div>
+                        </div>
+                        <div class="column cars">
+                                <div class="content">
+                                      <img src="images/summary mystery/not for boys.jpg" alt="'not for boys' the summary mystery collection "  class="imgs" id="myImg3"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img03">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+            <h3 class="gallery-info-text">'not for boys' the summary mystery collection, <span class="medium">photography</span>
+                AND <span class="medium">print ON PAPER,</span>
+                42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+
+                        <div class="column nature">
+                                <div class="content">
+                                      <img src="images/color me/color me africa.jpeg" alt="'color me africa' color me collection "  class="imgs" id="myImg4"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'color me africa' color me collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              <div class="column people">
+                                <div class="content">
+                                      <img src="images/forbidden/belle mia.jpeg" alt="'belle mia' the forbidden collection, " class="imgs" id="myImg5">
+                                      <div id="myModal" class="modal">
+                       <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+                                            </div>
+                                      <h3 class="gallery-info-text">'belle mia' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+
+                              <div class="column cars">
+                          <div class="content">
+                                <img src="images/summary mystery/tranquility.jpg" alt="'tranquility' the summary mystery collection" class="imgs" id="myImg6"
+                                />
+                                <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01">
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
+                            <h3 class="gallery-info-text">'tranquility' the summary mystery collection, <span class="medium">photography</span>
+                                AND <span class="medium">print ON PAPER,</span>
+                                42.5” X 35”, 2020</h3>
+                          </div>
+                        </div>
+                        <div class="column nature">
+                                <div class="content">
+                                      <img src="images/Diary of eros/enticing.jpg" alt="'enticing' diary of eros collection " class="imgs"
+                                      id="myImg7"/>
+                                      <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                  <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+                                                <!-- Modal Caption (Image Text) -->
+                                                <div id="caption"></div>
+                                                </div>
+                                      <h3 class="gallery-info-text">'enticing' diary of eros collection collection, <span class="medium">oilpainting</span>
+                                              AND <span class="medium">print ON PAPER,</span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+      
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/mothers of mine/zara of zulu.jpeg" alt="'zara of zulu' these mother of mine collection, "  class="imgs" id="myImg8"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'zara of zulu' these mother of mine collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                             
+                        
+                        
+                        <div class="column cars">
+                                <div class="content">
+                                      <img src="images/summary mystery/soulful man.jpg" alt="'soulful man' the summary mystery collection" class="imgs"
+                                     id="myImg9" />
+                                      <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                  <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+                 <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                                                </div>
+                                  <h3 class="gallery-info-text">'soulful man' the summary mystery collection, <span class="medium">photography</span>
+                                      AND <span class="medium">print ON PAPER,</span>
+                                      42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              <div class="column people">
+                                <div class="content">
+                                      <img src="images/forbidden/wicked.jpeg" alt="'wicked' the forbidden collection, " class="imgs" id="myImg10">
+                                      <div id="myModal" class="modal">
+                       <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+                                            </div>
+                                      <h3 class="gallery-info-text">'wicked' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+
+                              
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/mothers of mine/Afriya.jpeg" alt="'Afriya' these mother of mine collection, "  class="imgs" id="myImg11"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'Afriya' these mother of mine collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+      
+                      
+                        <div class="column people">
+                          <div class="content">
+                                <img src="images/color me/color me sister.jpeg" alt="'color me sister' the color me collection  " class="imgs" id="myImg12"
+                                />
+                                <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                        <!-- Modal Caption (Image Text) -->
+                                        <div id="caption"></div>
+                                      </div>
+                            <h3 class="gallery-info-text">'color me sister' the color me collection, <span class="medium">photography</span>
+                                AND <span class="medium">print ON PAPER,</span>
+                                42.5” X 35”, 2020</h3>
+                          </div>
+                        </div>
+                        <div class="column people">
+                                <div class="content">
+                                      <img src="images/forbidden/thabitha.jpeg" alt="' thabitha' the forbidden collection" class="imgs" id="myImg13">
+                                      <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                        <!-- Modal Caption (Image Text) -->
+                                        <div id="caption"></div>
+                                      </div>                                 <h3 class="gallery-info-text">' thabitha' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+
+                        <div class="column nature">
+                                <div class="content">
+                                      <img src="images/mothers of mine/edibong.jpeg" alt="'edibong' these mother of mine collection, "  class="imgs" id="myImg14"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'edibong' these mother of mine collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              
+<div class="column cars">
+                                <div class="content">
+                                      <img src="images/summary mystery/innocence.jpg" alt="'innocence' the summary mystery collection "  class="imgs" id="myImg15"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+            <h3 class="gallery-info-text">'innocence' the summary mystery collection, <span class="medium">photography</span>
+                AND <span class="medium">print ON PAPER,</span>
+                42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/Diary of eros/peace.jpg" alt="'peace' the diary of eros collection, "  class="imgs" id="myImg16"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'peace' the diary of eros collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                        
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/mothers of mine/Asiko Abike.jpeg" alt="'Asiko Abike' these mother of mine collection, "  class="imgs" id="myImg17"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'Asiko Abike' these mother of mine collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              
+      
+                             
+      
+      
+                        <div class="column cars">
+                                <div class="content">
+                                      <img src="/images/summary mystery/lover at night.jpg" alt="lover at night' the summary mystery collection " class="imgs"
+                                     id="myImg18" />
+                                     <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                        <!-- Modal Caption (Image Text) -->
+                                        <div id="caption"></div>
+                                      </div>
+                                  <h3 class="gallery-info-text">'lover at night' the summary mystery collection, <span class="medium">photography</span>
+                                      AND <span class="medium">print ON PAPER,</span>
+                                      42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/mothers of mine/Nne.jpeg" alt="'Nne' these mother of mine collection, "  class="imgs" id="myImg18"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'Nne' these mother of mine collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              <div class="column people">
+                                <div class="content">
+                                      <img src="images/forbidden/into the rage.jpeg" alt="" class="imgs" id="myImg19">
+                                      <div id="myModal" class="modal">
+                       <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+                                            </div>
+                                      <h3 class="gallery-info-text">'into the rage' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+                             
+
+
+
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/Diary of eros/wailing.jpg" alt="'wailing' the diary of eros collection, "  class="imgs" id="myImg20"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'wailing' the diary of eros collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                              
+                        
+                              <div class="column nature">
+                                <div class="content">
+                                      <img src="images/Diary of eros/nothing.jpg" alt="'nothing' the diary of eros collection "  class="imgs" id="myImg21"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'nothing' the diary of eros collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                             
+                              <div class="column cars">
+                                <div class="content">
+                                      <img src="images/summary mystery/man know man.jpg" alt="'man know man' the summary mystery collection "  class="imgs" id="myImg22"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+            <h3 class="gallery-info-text">'man know man' the summary mystery collection, <span class="medium">photography</span>
+                AND <span class="medium">print ON PAPER,</span>
+                42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+      
+                              <div class="column cars">
+                                <div class="content">
+                                      <img src="images/summary mystery/hidden man.jpg" alt="'hidden man' the summary mystery collection "  class="imgs" id="myImg23"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+            <h3 class="gallery-info-text">'hidden man' the summary mystery collection, <span class="medium">photography</span>
+                AND <span class="medium">print ON PAPER,</span>
+                42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+                             
+
+                      
+                        
+                        <div class="column people">
+                                <div class="content">
+                                      <img src="images/forbidden/fatal alliance.jpeg" alt="'fatal alliance' the forbidden collection, " class="imgs" id="myImg24">
+                                      <div id="myModal" class="modal">
+                       <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+                                            </div>
+                                      <h3 class="gallery-info-text">'fatal alliance' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                              42.5” X 35”, 2021</h3>
+                                </div>
+                              </div>
+
+                        <div class="column nature">
+                                <div class="content">
+                                      <img src="images/Diary of eros/disturbed.jpg" alt="'disturbed' the diary of eros collection, "  class="imgs" id="myImg25"/>
+                                      <!-- The Modal -->
+      <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img02">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+                                      <h3 class="gallery-info-text">'disturbed' the diary of eros collection, <span class="medium">oil painting</span>
+                                              AND <span class="medium">image ON PAPER,</span>
+                                              42.5” X 35”, 2020</h3>
+                                </div>
+                              </div>
+
+                             
+      
+                        <div class="column people">
+                          <div class="content">
+                                <img src="images/forbidden/undeniably.jpeg" alt="undeniably' the forbidden collection" class="imgs" id="myImg26">
+                                <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                        <!-- Modal Caption (Image Text) -->
+                                        <div id="caption"></div>
+                                      </div>
+                                <h3 class="gallery-info-text">'undeniably' the forbidden collection, <span class="medium">CHARCOAL </span>
+                                        42.5” X 35”, 2021</h3>
+                          </div>
+                        </div>
+                        
+                      <!-- END GRID -->
+                      </div>
+                          
+                        </main>
+        <footer>
+                <div class="social-icon box">
+                  <ul>
+                    <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-instagram icon" class="icons"></a></li>
+                    <li><a href="#"><img src="images/icon-instagram.svg" class="icons" alt="icon-twitter"></a></li> 
+                    
+                  </ul>
+                  </div>
+                 </div>
+               <div class="author-tag">
+              <h4><span>&copy;</span> IFÉ MÉMÉNTOS</h4>
+              
+               </div>
+               <div class="author">
+              </footer>
+              
+                <script src="js/sticky.js"></script> 
+              <script src="js/navigation.js"></script>
+               <script src="js/script.js"></script>
+               <script src="js/filter-btn.js"></script>
+               <!-- <script src="/example.js"></script> -->
+            </body>
+          </html>

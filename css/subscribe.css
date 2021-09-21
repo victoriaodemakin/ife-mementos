@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  --secondary-color: #8f8f8f;
+  --light-bg-color: hsla(0,0%, 88%,0.2);
+  --header-color: hsla(0,0%, 88%,0.9);
+  --background-color: #00000080;
+  --white-color: hsl(0, 0%, 100%);
+  --black-text-color: hsl(0, 0%, 0%);
+  --footer-bg: hsl(240, 10%, 16%);
+  --secondary-text: hsl(207, 13%, 34%);
+  --dark-grey-color: rgba(0, 0, 0, 0.5);
+  --red-color: #e85454;
+  --menu-sliver: #c0c0c0;
+  --menu-grey : #f2f2f2;
+  --dark-menu : #707070;
+
+  --left-bg-color: white;
+  --right-bg-color: #f2f2f2;;
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --hover-width: 70%;
+  --other-width: 30%;
+  --speed: 500ms;
+
+  --header-font1: "Josefin Sans", sans-serif;
+  --text-font2: "Abel", sans-serif;
+  --text-font3:font-family: 'Nunito', sans-serif;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Abel", sans-serif;
+  font-family: "europa", sans-serif;
+  overflow-y: scroll;
+  background: var(--white-color);
+  
+}
+
+main{
+        margin-top: 4em;
+        
+}
+.subscribe-area-col{
+        width: 100%;
+        padding-top: 1em;
+        padding: 2em 0;
+       
+      }
+      
+      .subscribe-text h3{
+        font-family: var(--header-font1);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--black-text-color);
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 0.5em auto;
+      
+      }
+      .subscribe-text-line {
+        width: 250px;
+        margin-top: -.8em;
+        margin-bottom: 2em;
+      }
+      
+      .subscribe-text p{
+        font-weight:600;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 3em;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: var(--text-font2);
+        color: var(--black-text-color);
+        padding: 0 2em;
+      }
+      .subscribe-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1em;
+        margin: 1em 0 ;
+      }
+      .input-placeholder-box{
+        margin: 0.5em;
+        margin-bottom: 1.5em;
+        padding: 1.5em;
+        color: var(--dark-grey-color);
+        border: none;
+        width: 90%;
+        
+      }
+      .input-placeholder-box:focus{
+        outline: var(--black-text-color);
+      }
+      .sign-up{
+        width: 50%;
+        margin: 0.5em auto;
+        margin-bottom: 1.5em;
+        padding: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--white-color);
+        background: var(--black-text-color);
+        border: none;
+      }
+      .sign-up:hover{
+        color: var(--black-text-color);
+        background: var(--white-color);
+        border: 1px solid black;
+      }
+      
+      .checkbox-container{
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: var(--text-font2);
+        color: var(--black-text-color);
+        padding: 0 1em;
+        font-weight: 600;
+        
+      }
+      @media all and (min-width: 1200px){
+        .subscribe-column{
+                width: 100%;
+                margin: 2em 0 ;
+                padding: 2em 0;
+              }
+              
+              .subscribe-text h3{
+                font-family: var(--header-font1);
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: var(--black-text-color);
+                font-size: 1.5em;
+                font-weight: 600;
+                margin: 0.5em auto;
+              
+              }
+              .subscribe-text-line {
+                width: 20%;
+                margin-top: -.8em;
+                margin-bottom: 2em;
+              }
+              
+              .subscribe-text p{
+                font-weight:600;
+                text-align: center;
+                letter-spacing: 2px;
+                line-height: 3em;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: var(--text-font2);
+                color: var(--black-text-color);
+                padding: 0 2em;
+              }
+              .subscribe-form {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 2em;
+                margin: 1em 0 ;
+              }
+              .input-placeholder-box{
+                margin: 0.5em;
+                margin-bottom: 1.5em;
+                padding: 1.5em;
+                color: var(--dark-grey-color);
+                border: none;
+                width: 50%;
+                
+              }
+              .input-placeholder-box:focus{
+                outline: var(--black-text-color);
+              }
+              .sign-up{
+                width: 20%;
+                margin: 0.5em auto;
+                margin-bottom: 1.5em;
+                padding: 1em;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: var(--white-color);
+                background: var(--black-text-color);
+                border: none;
+              }
+              .sign-up:hover{
+                color: var(--black-text-color);
+                background: var(--white-color);
+                border: 1px solid black;
+              }
+              
+              .checkbox-container{
+                text-align: center;
+                letter-spacing: 2px;
+                line-height: 1.5em;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: var(--text-font2);
+                color: var(--black-text-color);
+                padding: 0 1em;
+                font-weight: 600;
+                padding-bottom: 4em;
+        
+                
+              }  
+}

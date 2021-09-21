@@ -1,0 +1,126 @@
+body {
+}
+.search-body {
+  padding-top: 6em;
+  background: hsla(0, 0%, 88%, 0.2);
+}
+.search-button-col {
+  width: 100%;
+  margin: 1em 0;
+  margin-bottom: 2em;
+}
+input[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("/images/icons8-search.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="search"]:focus {
+  width: 100%;
+}
+.collection {
+  width: fit-content;
+  padding: 0 1em;
+}
+.collection-image {
+  width: 100%;
+}
+.button {
+  width: 100;
+  margin: 0 auto;
+  padding-left: 1em;
+}
+button {
+  width: 250px;
+  margin: 0.5em 3em;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white-color);
+  background: var(--black-text-color);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--black-text-color);
+  background: var(--white-color);
+  border: 1px solid black;
+}
+
+/* auto-compelte */
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 2em;
+  margin: 1em;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  display: none;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+/* media query */
+
+@media all and (min-width: 1240px) {
+  .search-button-col {
+    display: block;
+    padding-left: 30%;
+    padding-right: 10%;
+    padding-top: 6em;
+    padding-bottom: 2em;
+  }
+  input[type="search"] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("/images/icons8-search.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  .collection {
+    padding: 0 20%;
+    width: 100%;
+    padding-left: 30%;
+  }
+  .collection-image {
+    width: 80%;
+  }
+  button {
+    margin-left: 40%;
+  }
+}

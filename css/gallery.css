@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  --secondary-color: #8f8f8f;
+  --light-bg-color: hsla(0,0%, 88%,0.2);
+  --header-color: hsla(0,0%, 88%,0.9);
+  --background-color: #00000080;
+  --white-color: hsl(0, 0%, 100%);
+  --black-text-color: hsl(0, 0%, 0%);
+  --footer-bg: hsl(240, 10%, 16%);
+  --secondary-text: hsl(207, 13%, 34%);
+  --dark-grey-color: rgba(0, 0, 0, 0.5);
+  --red-color: #e85454;
+  --menu-sliver: #c0c0c0;
+  --menu-grey : #f2f2f2;
+  --dark-menu : #707070;
+
+  --left-bg-color: white;
+  --right-bg-color: #f2f2f2;;
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --hover-width: 70%;
+  --other-width: 30%;
+  --speed: 500ms;
+
+  --header-font1: "Josefin Sans", sans-serif;
+  --text-font2: "Abel", sans-serif;
+  --text-font3:font-family: 'Nunito', sans-serif;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Abel", sans-serif;
+  font-family: "europa", sans-serif;
+  overflow-y: scroll;
+  background: var(--light-bg-color);
+}
+main{
+        width: 100%;
+        margin: 5em auto;
+}
+.gallery-col{
+
+      }
+      .imgs{
+        width: 100%;
+        
+      }
+      .content {
+        background-color: var(--light-bg-color);
+        position: relative;
+        margin: 0 auto;
+    }
+.gallery-main-title h3{
+        font-family: var(--header-font1);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--black-text-color);
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 1em auto;
+
+      
+      }
+      .gallery-info-text{
+        font-weight:600;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.6em;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: var(--text-font2);
+        color: var(--black-text-color);
+        padding: 0 2em;
+        position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: var(--white-color); /* Grey text */
+    width: 100%; /* Full width */
+    padding: 1em; /* Some padding */
+    padding-right: -3em;
+   
+      }
+      .gallery-under-line {
+        width: 80%;
+        margin-top: -.8em;
+        margin-bottom: 2em;
+      }
+      
+      
+      .row {
+        width: 100%;
+        background-color: var(--light-bg-color);
+         display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+          grid-gap: 2em;
+          padding: 0 0.5em;
+      }
+      
+      /* Add padding BETWEEN each column (if you want) */
+      .row,
+      .row > .column {
+        padding: 2px;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        margin: 0 2em;
+        display: none; /* Hide columns by default */
+      }
+      
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Content */
+      .content {
+        background-color: white;
+        padding: .4em;
+        
+      }
+      
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+      .filter-btn-container{
+        padding: 2em 1em ;
+        
+      }
+      /* Style the buttons */
+      .btn {
+        width: 40%;
+        margin: 0.5em 1.2em;
+        margin-bottom: 1em;
+        padding: 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--black-text-color);
+        background: var(--white-color);
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .btn:hover {
+        color: var(--black-text-color);
+      background-color: #ddd;
+      }
+      
+      /* Add a dark background color to the active button */
+      .btn.active {
+        background-color: var(--black-text-color);
+        color: white;
+      }
+
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #myImg:hover {
+        opacity: 0.7;
+      }
+      #myImg2:hover {
+        opacity: 0.7;
+      }#myImg3:hover {
+        opacity: 0.7;
+      }#myImg4:hover {
+        opacity: 0.7;
+      }#myImg5:hover {
+        opacity: 0.7;
+      }#myImg6:hover {
+        opacity: 0.7;
+      }#myImg7:hover {
+        opacity: 0.7;
+      }#myImg8:hover {
+        opacity: 0.7;
+      }#myImg9:hover {
+        opacity: 0.7;
+      }#myImg10:hover {
+        opacity: 0.7;
+      }#myImg11:hover {
+        opacity: 0.7;
+      }#myImg12:hover {
+        opacity: 0.7;
+      }#myImg13:hover {
+        opacity: 0.7;
+      }#myImg14:hover {
+        opacity: 0.7;
+      }#myImg15:hover {
+        opacity: 0.7;
+      }#myImg16:hover {
+        opacity: 0.7;
+      }#myImg17:hover {
+        opacity: 0.7;
+      }#myImg18:hover {
+        opacity: 0.7;
+      }#myImg19:hover {
+        opacity: 0.7;
+      }#myImg20:hover {
+        opacity: 0.7;
+      }#myImg21:hover {
+        opacity: 0.7;
+      }#myImg22:hover {
+        opacity: 0.7;
+      }#myImg23:hover {
+        opacity: 0.7;
+      }#myImg24:hover {
+        opacity: 0.7;
+      }#myImg25:hover {
+        opacity: 0.7;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+      
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 85%;
+        max-width: 600px;
+       
+      }
+      
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 500px;
+                text-align: center;
+                font-weight:600;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--text-font2);
+  color: var(--white-color);
+  padding: 0 2em;
+      }
+      
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+      
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 2.5em;
+        right: 10px;
+        color:var(--white-color);
+        font-size: 2em;
+        font-weight: 400;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: var(--dark-grey-color);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      @media all and (min-width: 1200px){
+            .filter-btn-container{
+                    display: flex;
+                    padding: 2em 2em;
+                 
+            } 
+            .btn{
+                    width: 15%;
+                    margin: 0.5em .5em;
+                    margin-bottom: 1em;
+                    padding: 1em -1em;
+                    text-align: center;
+                    text-transform: uppercase;
+            }
+            .gallery-under-line {
+                width: 20%;
+                margin-top: -.8em;
+                margin-bottom: 1em;
+              }
+              #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+              }
+              
+              #myImg:hover {
+                opacity: 0.7;
+              }
+              
+              /* The Modal (background) */
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+              }
+              
+              /* Modal Content (image) */
+              .modal-content {
+                margin: auto;
+                display: block;
+                width: 85%;
+                max-width: 600px;
+               
+              }
+              
+              /* Caption of Modal Image */
+              #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 500px;
+                text-align: center;
+                font-weight:600;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--text-font2);
+  color: var(--white-color);
+  padding: 0 2em;
+              }
+              
+              /* Add Animation */
+              .modal-content,
+              #caption {
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+              }
+              
+              @-webkit-keyframes zoom {
+                from {
+                  -webkit-transform: scale(0);
+                }
+                to {
+                  -webkit-transform: scale(1);
+                }
+              }
+              
+              @keyframes zoom {
+                from {
+                  transform: scale(0);
+                }
+                to {
+                  transform: scale(1);
+                }
+              }
+              
+              /* The Close Button */
+              .close {
+                position: absolute;
+                top: 2em;
+                right: 35px;
+                color:var(--white-color);
+                font-size: 3em;
+                font-weight: 400;
+                transition: 0.3s;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: var(--dark-grey-color);
+                text-decoration: none;
+                cursor: pointer;
+              }
+            
+      }
